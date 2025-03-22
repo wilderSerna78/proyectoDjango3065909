@@ -3,8 +3,8 @@ from django.views.generic import ListView
 from .models import Service
 
 # Create your views here.
+def home(request):
+    return render(request, 'home.html')
+
 # Vista para listar servicios
-class ServiceListView(ListView):
-    model = Service
-    template_name = 'service_list.html'
-    context_object_name = 'services'
+
