@@ -1,10 +1,9 @@
-from django.shortcuts import render, get_object_or_404,redirect
-from django.views.generic import ListView
-from .models import Service
+from django.shortcuts import render
 
-# Create your views here.
+
+# ===============================/ Pagina inicial home /======================== #
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'home.html') # Pagina de inicio
 
 # Vista para listar servicios
 
