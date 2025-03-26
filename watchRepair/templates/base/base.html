@@ -31,7 +31,7 @@
         <!-- Navigation bar. --//-- Barra de navegación. -->
         <nav class="navbar navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
+                <a class="navbar-brand" href="{% url 'home' %}">WPA. Watch Repair</a>
                 <!-- Menu button on small devices. --//-- Botón de menú en dispositivos pequeños. -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
@@ -44,13 +44,16 @@
                             <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
+                            <a class="nav-link" href="{% url 'aboutUs' %}">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link" href="{% url 'services' %}">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contactos</a>
+                            <a class="nav-link" href="{% url 'contacts' %}">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'admin:index' %}">Administración</a>
                         </li>
                     </ul>
                     <!-- <form class="d-flex" role="search">
